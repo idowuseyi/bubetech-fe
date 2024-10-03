@@ -1,10 +1,4 @@
-// import { validateRequest } from "@/auth";
-// import { Button } from "@/components/ui/button";
-// import prisma from "@/lib/prisma";
-// import streamServerClient from "@/lib/stream";
-// import { Bookmark, Home } from "lucide-react";
 import Link from "next/link";
-import { menuData } from "../../../constant";
 import { IoAddCircleOutline } from "react-icons/io5";
 import { MdAdd } from "react-icons/md";
 import Image from "next/image";
@@ -15,8 +9,6 @@ import { GrResources } from "react-icons/gr";
 import { GiNotebook } from "react-icons/gi";
 import { CiHeart } from "react-icons/ci";
 
-// import MessagesButton from "./MessagesButton";
-// import NotificationsButton from "./NotificationsButton";
 
 interface MenuBarProps {
     className?: string;
@@ -35,7 +27,7 @@ export default async function MenuBar({ className }: MenuBarProps) {
                 />
                 <div className="flex flex-col items-start">
                     <h2 className="font-medium text-sm">Abubakar Abdullahi</h2>
-                    <p className="text-[#6FA521] font-normal text-xs underline">Edit profile</p>
+                    <p className="text-[#6FA521] font-normal text-xs cursor-pointer underline">Edit profile</p>
                 </div>
                 <div className="rounded-full w-6 flex items-center cursor-pointer justify-center h-6 bg-[#6FA521] "><MdAdd size={20} className="text-white" /></div>
             </div>
