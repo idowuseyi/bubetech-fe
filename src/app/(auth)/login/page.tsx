@@ -21,6 +21,7 @@ import Link from 'next/link';
 import { FcGoogle } from "react-icons/fc";
 import { SiApple } from "react-icons/si";
 import { FaFacebook } from "react-icons/fa6";
+import Slider from '@/components/slider';
 
 const Page = () => {
     const [error, setError] = useState<string>();
@@ -39,7 +40,7 @@ const Page = () => {
         console.log("value", values)
     }
     return (
-        <div className='flex min-h-screen h-full'>
+        <div className='flex xl:min-h-screen h-full'>
             <div className='hidden flex-[3] p-4 pt-8 max-w-[700px] bg-[#3F6A01] md:flex flex-col'>
                 <Image
                     src={logoImage}
@@ -50,6 +51,7 @@ const Page = () => {
                     <h2 className='font-semibold text-5xl leading-[90px] text-white'>Crop Monitoring and Support Services</h2>
                     <p className='text-white max-w-[550px] text-start font-normal text-xl leading-[30.03px]'>Farmers can receive real-time advice and tips for their farm produce, enhancing productivity and supporting decision-making</p>
                 </div>
+                <Slider />
             </div>
             <div className='flex-[4] bg-[#F6F6F6]'>
                 <div className='mt-10'>
@@ -104,7 +106,7 @@ const Page = () => {
                 <div className='mt-2 flex flex-col w-3/4 max-w-[550px] mx-auto gap-10'>
                     <div className='flex font-normal text-xs text-center w-full items-center gap-1'>
                         <p>Don&rsquo;t have an account?</p>
-                        <Link href="/register" className='text-[#6FA521]'>Sign up</Link>
+                        <Link href="/signup" className='text-[#6FA521]'>Sign up</Link>
                     </div>
                     <p className='text-[#4F4F4F] text-center font-normal text-xs'>or sign in with</p>
                     <div className='flex items-center gap-4 justify-center'>

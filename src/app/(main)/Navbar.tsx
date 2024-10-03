@@ -26,36 +26,36 @@ export default function Navbar() {
                     <div>Search</div>
                 </div>
                 <div className="flex items-center gap-4">
-                    <div className="flex flex-col items-center gap-">
+                    <div className="flex flex-col items-center gap- cursor-pointer">
                         <GoHome size={18} />
-                        <p className="font-medium text-base text-[#828282]">Home</p>
+                        <p className="font-normal text-sm leading-6 text-[#828282]">Home</p>
                     </div>
-                    <div className="flex flex-col items-center">
+                    <div className="flex flex-col items-center cursor-pointer">
 
                         <IoAddCircleOutline size={18} />
-                        <p className="font-medium text-base text-[#828282]">Post</p>
+                        <p className="font-normal text-sm leading-6 text-[#828282]">Post</p>
                     </div>
-                    <div className="flex flex-col items-center">
+                    <div className="flex flex-col items-center cursor-pointer">
                         <IoBagHandleOutline size={18} />
-                        <p className="font-medium text-base text-[#828282]">Market</p>
+                        <p className="font-normal text-sm leading-6 text-[#828282]">Market</p>
                     </div>
-                    <div className="flex flex-col items-center">
+                    <div className="flex flex-col items-center cursor-pointer">
                         <BsChatLeftText size={18} />
-                        <p className="font-medium text-base text-[#828282]">Chat</p>
+                        <p className="font-normal text-sm leading-6 text-[#828282]">Chat</p>
                     </div>
                 </div>
                 <div className="flex gap-4 items-center">
-                    <div className="flex flex-col items-center">
-                        <IoIosNotificationsOutline size={24} />
-                        <p className="font-medium text-base text-[#828282]">Notification</p>
+                    <div className="flex flex-col items-center cursor-pointer">
+                        <IoIosNotificationsOutline size={18} />
+                        <p className="font-normal text-sm leading-6 text-[#828282]">Notification</p>
                     </div>
-                    <div className="flex flex-col items-center">
+                    <div className="flex flex-col items-center cursor-pointer">
                         <AiOutlineMenu size={18} />
-                        <p className="font-medium text-base text-[#828282]">Menu</p>
+                        <p className="font-normal text-sm leading-6 text-[#828282]">Menu</p>
                     </div>
-                    <div className="flex flex-col items-center">
+                    <div className="flex flex-col items-center cursor-pointer">
                         <CgProfile size={18} />
-                        <p className="font-medium text-base text-[#828282]">Profile</p>
+                        <p className="font-normal text-sm leading-6 text-[#828282]">Profile</p>
                     </div>
                 </div>
             </div>

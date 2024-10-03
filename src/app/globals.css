@@ -70,3 +70,10 @@ body {
     @apply bg-background text-foreground;
   }
 }
+.splide_track .splide_list {
+  display: flex;
+  width: 100%;
+}
+.splide__arrows {
+  display: none;
+}
