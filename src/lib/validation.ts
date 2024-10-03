@@ -3,10 +3,11 @@ import { z } from "zod";
 const requiredString = z.string().trim().min(1, "Required");
 
 export const signUpSchema = z.object({
+  name: requiredString.min(2, "Name must be at least 2 characters"),
   email: requiredString.email("Invalid email address"),
-  username: requiredString.regex(
-    /^[a-zA-Z0-9_-]+$/,
-    "Only letters, numbers, - and _ allowed"
+  phoneNumber: requiredString.regex(
+    /^\d{10,15}$/,
+    "Phone number must be between 10 and 15 digits"
   ),
   password: requiredString.min(8, "Must be at least 8 characters"),
 });
