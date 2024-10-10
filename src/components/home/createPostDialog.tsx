@@ -23,7 +23,7 @@ export default function CreatePostDialog({ open, onClose }: CreatePostDialogProp
                 <div className='absolute shadow-sm border-b w-full p-2 flex items-center justify-between top-1 left-0 bg-white'>
                     <p onClick={onClose} className='text-[#BEBEBE] cursor-pointer font-normal text-sm'>Cancel</p>
                     <h2 className='text-base font-medium text-[#323232]'>Create Post</h2>
-                    <Button className='bg-[#6FA521] z-10 w-24'>Post</Button>
+                    <Button className='bg-[#6FA521] z-10 w-24 outline-none'>Post</Button>
                 </div>
 
                 <div className='flex items-center gap-4 mt-10'> <Image
