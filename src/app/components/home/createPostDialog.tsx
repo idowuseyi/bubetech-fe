@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from "../ui/button";
+import { Button } from "../../../components/ui/button";
 import PersonImage from "@/assets/abdullahi_image.png"
 import {
     Dialog,
@@ -8,7 +8,7 @@ import {
     DialogFooter,
     DialogHeader,
     DialogTitle,
-} from "../ui/dialog";
+} from "../../../components/ui/dialog";
 import Image from 'next/image';
 
 interface CreatePostDialogProps {

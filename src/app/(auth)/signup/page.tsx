@@ -14,14 +14,14 @@ import { Input } from "@/components/ui/input";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useState, useTransition } from "react";
 import { useForm } from "react-hook-form";
-import { PasswordInput } from '@/components/PasswordInput';
-import LoadingButton from '@/components/LoadingButton';
+import { PasswordInput } from '@/app/components/input/PasswordInput';
+import LoadingButton from '@/app/components/button/LoadingButton';
 import { signUpSchema, SignUpValues } from '@/lib/validation';
 import Link from 'next/link';
 import { FcGoogle } from "react-icons/fc";
 import { SiApple } from "react-icons/si";
 import { FaFacebook } from "react-icons/fa6";
-import Slider from '@/components/slider';
+import Slider from '@/app/components/slider/slider';
 import { Button } from '@/components/ui/button';
 import { redirect } from 'next/navigation';
 
@@ -40,7 +40,7 @@ const Page = () => {
 
     async function onSubmit(values: SignUpValues) {
         console.log("value", values)
-        redirect("/lgoin")
+        redirect("/verify-email")
     }
     return (
         <div className='flex xl:min-h-screen h-full'>

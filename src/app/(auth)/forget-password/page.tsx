@@ -15,7 +15,7 @@ import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { loginSchema, LoginValues } from '@/lib/validation';
 import Link from 'next/link';
-import LoadingButton from '@/components/LoadingButton';
+import LoadingButton from '@/app/components/button/LoadingButton';
 import Image from 'next/image';
 
 export default function Page() {

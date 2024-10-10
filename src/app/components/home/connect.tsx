@@ -1,9 +1,9 @@
 "use client"
 import React, { useState } from 'react'
-import { CONNECT_WITH, GROUPS_YOU_CAN_JOIN } from '../../../constant'
+import { CONNECT_WITH, GROUPS_YOU_CAN_JOIN } from '../../../../constant'
 import Image from 'next/image'
 import stack from "@/assets/stack-image.png"
-import { Button } from '../ui/button'
+import { Button } from '../../../components/ui/button'
 import { IoMdClose } from "react-icons/io";
 
 

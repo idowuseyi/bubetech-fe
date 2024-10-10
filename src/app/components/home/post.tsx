@@ -1,5 +1,5 @@
 import React from 'react'
-import { POST } from '../../../constant'
+import { POST } from '../../../../constant'
 import Image from 'next/image'
 import { BsThreeDots } from "react-icons/bs";
 import { IoMdClose } from 'react-icons/io';

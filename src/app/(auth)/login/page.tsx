@@ -14,14 +14,14 @@ import { Input } from "@/components/ui/input";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useState, useTransition } from "react";
 import { useForm } from "react-hook-form";
-import { PasswordInput } from '@/components/PasswordInput';
-import LoadingButton from '@/components/LoadingButton';
+import { PasswordInput } from '@/app/components/input/PasswordInput';
+import LoadingButton from '@/app/components/button/LoadingButton';
 import { loginSchema, LoginValues } from '@/lib/validation';
 import Link from 'next/link';
 import { FcGoogle } from "react-icons/fc";
 import { SiApple } from "react-icons/si";
 import { FaFacebook } from "react-icons/fa6";
-import Slider from '@/components/slider';
+import Slider from '@/app/components/slider/slider';
 import { useRouter } from 'next/navigation';
 
 const Page = () => {
@@ -96,7 +96,7 @@ const Page = () => {
                                 <input type='checkbox' id='rememberMe' className='custom-checkbox' />
                                 <p>Keep me signed in</p>
                             </div>
-                            <Link className='text-[#6FA521] ' href="/forgetpassword">Forgot Password?</Link>
+                            <Link className='text-[#6FA521] ' href="/forget-password">Forgot Password?</Link>
                         </div>
                         <div className="mt-20">
                             <LoadingButton loading={isPending} type="submit" className="w-full bg-[#3F6A01] p-4 lg:space-y-10">

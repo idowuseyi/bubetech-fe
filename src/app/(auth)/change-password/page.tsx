@@ -15,9 +15,9 @@ import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { loginSchema, LoginValues } from '@/lib/validation';
 import Link from 'next/link';
-import LoadingButton from '@/components/LoadingButton';
+import LoadingButton from '@/app/components/button/LoadingButton';
 import Image from 'next/image';
-import { PasswordInput } from '@/components/PasswordInput';
+import { PasswordInput } from '@/app/components/input/PasswordInput';
 
 export default function Page() {
     const router = useRouter();
