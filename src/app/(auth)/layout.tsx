@@ -11,5 +11,5 @@ export default async function Layout({
     children: React.ReactNode;
 }) {
 
-    return <div className={`${poppins.className}`}>{children}</div>;
+    return <div className={`${poppins.className} bg-[#F6F6F6]`}>{children}</div>;
 }
