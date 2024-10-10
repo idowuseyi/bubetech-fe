@@ -8,6 +8,10 @@ import { IoMdPeople } from "react-icons/io";
 import { GrResources } from "react-icons/gr";
 import { GiNotebook } from "react-icons/gi";
 import { CiHeart } from "react-icons/ci";
+import { TbUsersGroup } from "react-icons/tb";
+import { MdOutlineEvent } from "react-icons/md";
+
+
 
 
 interface MenuBarProps {
@@ -33,28 +37,28 @@ export default async function MenuBar({ className }: MenuBarProps) {
             </div>
             <div className="mt-20 flex gap-2 2xl:gap-6 flex-col">
                 <div className="flex items-center gap-1 cursor-pointer hover:bg-gray-50 hover:rounded-xl p-2">
-                    <div className="w-7 h-7 items-center rounded-full justify-center bg-[#F9EDFF] flex"><IoBagHandleOutline /></div>
+                    <div className="w-7 h-7 items-center rounded-full justify-center bg-[#F9EDFF] flex"><IoBagHandleOutline className="text-[#690996]" /></div>
                     <p className="font-normal text-sm">Marketplace</p>
                 </div>
                 <div className="flex items-center gap-1 cursor-pointer hover:bg-gray-50 hover:rounded-xl p-2">
-                    <div className="w-7 h-7 items-center rounded-full justify-center bg-[#E2F8FF] flex"><IoMdPeople /></div>
+                    <div className="w-7 h-7 items-center rounded-full justify-center bg-[#E2F8FF] flex"><IoMdPeople className="text-[#108EB6]" /></div>
                     <p className="font-normal text-sm">Experts</p>
                 </div>
                 <div className="flex items-center gap-1 cursor-pointer hover:bg-gray-50 hover:rounded-xl p-2">
-                    <div className="w-7 h-7 items-center rounded-full justify-center bg-[#E0FFDD] flex"><GrResources /></div>
+                    <div className="w-7 h-7 items-center rounded-full justify-center bg-[#E0FFDD] flex"><GrResources className="text-[#2D8225]" /></div>
                     <p className="font-normal text-sm">Resources</p>
                 </div>
                 <div className="flex items-center gap-1 cursor-pointer hover:bg-gray-50 hover:rounded-xl p-2">
-                    <div className="w-7 h-7 items-center rounded-full justify-center bg-[#DDFFFF] flex"><GiNotebook /></div>
+                    <div className="w-7 h-7 items-center rounded-full justify-center bg-[#DDFFFF] flex"><GiNotebook className="text-[#0CB2B2]" /></div>
                     <p className="font-normal text-sm">Prescription</p>
 
                 </div>
                 <div className="flex items-center gap-1 cursor-pointer hover:bg-gray-50 hover:rounded-xl p-2">
-                    <div className="w-7 h-7 items-center rounded-full justify-center bg-[#F9EDFF] flex"><IoBagHandleOutline /></div>
+                    <div className="w-7 h-7 items-center rounded-full justify-center bg-[#F9EDFF] flex"><IoBagHandleOutline className="text-[#718515]" /></div>
                     <p className="font-normal text-sm">Workshop & Webinars</p>
                 </div>
                 <div className="flex items-center gap-1 cursor-pointer hover:bg-gray-50 hover:rounded-xl p-2">
-                    <div className="w-7 h-7 items-center rounded-full justify-center bg-[#F8FFD8] flex"><CiHeart /></div>
+                    <div className="w-7 h-7 items-center rounded-full justify-center bg-[#D9D3FC] flex"><CiHeart className="text-[#2007BA]" /></div>
                     <p className="font-normal text-sm">Saved</p>
                 </div>
                 <div className="flex items-center gap-1 cursor-pointer hover:bg-gray-50 hover:rounded-xl p-2">
@@ -62,11 +66,11 @@ export default async function MenuBar({ className }: MenuBarProps) {
                     <p className="font-normal text-sm">Disease Diagnosis</p>
                 </div>
                 <div className="flex items-center gap-1 cursor-pointer hover:bg-gray-50 hover:rounded-xl p-2">
-                    <div className="w-7 h-7 items-center rounded-full justify-center bg-[#F8FFD8] flex"><CiHeart /></div>
+                    <div className="w-7 h-7 items-center rounded-full justify-center bg-[#FBD5E1] flex"><TbUsersGroup className="text-[#851537]" /></div>
                     <p className="font-normal text-sm">Groups</p>
                 </div>
                 <div className="flex items-center gap-1 cursor-pointer hover:bg-gray-50 hover:rounded-xl p-2">
-                    <div className="w-7 h-7 items-center rounded-full justify-center bg-[#F8FFD8] flex"><CiHeart /></div>
+                    <div className="w-7 h-7 items-center rounded-full justify-center bg-[#DDFFFF] flex"><MdOutlineEvent className="text-[#0CB2B2]" /></div>
                     <p className="font-normal text-sm">Events</p>
                 </div>
                 <div className="flex items-center gap-1 cursor-pointer hover:bg-gray-50 hover:rounded-xl p-2">
