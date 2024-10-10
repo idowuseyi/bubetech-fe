@@ -73,12 +73,27 @@ body {
 .swiper-slide {
   width: "560px";
   margin: 0 auto;
+  /* position: relative; */
+  overflow: visible;
 }
 .swiper-pagination-bullet {
-  background-color: yellow !important; /* Change the color of inactive dots */
-  opacity: 1; /* Ensures the dots are fully visible */
+  background-color: #a8a8a8 !important; /* Change the color of inactive dots */
+  opacity: 1;
+  margin-top: 100px;
 }
 
+/* .swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  position: absolute !important;
+  bottom: -20px !important;
+  opacity: 1;
+  z-index: 1;
+  overflow: visible;
+  border: 1px solid red;
+} */
+
 .swiper-pagination-bullet-active {
-  background-color: yellow !important; /* Change the color of active dots */
+  background-color: #6fa521 !important; /* Change the color of active dots */
 }

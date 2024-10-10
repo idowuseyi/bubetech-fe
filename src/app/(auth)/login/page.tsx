@@ -96,7 +96,7 @@ const Page = () => {
                                 <input type='checkbox' id='rememberMe' className='custom-checkbox' />
                                 <p>Keep me signed in</p>
                             </div>
-                            <Link className='text-[#6FA521] ' href="">Forgot Password?</Link>
+                            <Link className='text-[#6FA521] ' href="/forgetpassword">Forgot Password?</Link>
                         </div>
                         <div className="mt-20">
                             <LoadingButton loading={isPending} type="submit" className="w-full bg-[#3F6A01] p-4 lg:space-y-10">

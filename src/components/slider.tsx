@@ -10,7 +10,7 @@ import 'swiper/css/pagination';
 
 const Slider = () => {
     return (
-        <div className='mt-8 w-[530px]'>
+        <div className='mt-8 h-[400px] w-[530px] relative'>
             <Swiper
                 modules={[Autoplay, Pagination]}
                 slidesPerView={1}
