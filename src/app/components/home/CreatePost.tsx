@@ -13,7 +13,7 @@ interface CreatePostProps {
 
 const CreatePost = ({ handleShowCreateDialog }: CreatePostProps) => {
     return (
-        <div className='bg-white rounded-md flex flex-col gap-10 p-3 w-full'>
+        <div className='hidden bg-white rounded-md md:flex flex-col gap-10 p-3 w-full'>
             <div className='flex items-center gap-4'> <Image
                 src={PersonImage}
                 alt=""

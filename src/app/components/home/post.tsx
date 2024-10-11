@@ -12,9 +12,9 @@ import { FaRegComment } from "react-icons/fa";
 
 const Post = () => {
     return (
-        <div className=' rounded-md bg-white flex flex-col gap-2'>
+        <div className='md:rounded-md md:bg-white flex flex-col gap-2'>
             {POST.map((item) => {
-                return (<div key={item.id} className='flex flex-col gap-3 shadow-md'>
+                return (<div key={item.id} className='flex flex-col gap-3 md:shadow-md'>
                     <div className='flex items-start justify-between p-3'>
                         <div className='flex gap-2 items-start'>
                             <Image

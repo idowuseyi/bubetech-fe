@@ -97,3 +97,6 @@ body {
 .swiper-pagination-bullet-active {
   background-color: #6fa521 !important; /* Change the color of active dots */
 }
+.weatherCard-gradient {
+  background: linear-gradient(95.35deg, #304c07 0%, #6fa521 100%);
+}

@@ -7,21 +7,21 @@ import postImage from "@/assets/girlsInTheFarm.png"
 export const CONNECT_WITH = [
     {
         id: 0,
-        img: danladi,
+        img: postImage,
         name: "Bello Danladi",
         profession: "Farmer",
         friends: 12,
     },
     {
         id: 1,
-        img: danladi,
+        img: postImage,
         name: "Esther John",
         profession: "Trader",
         friends: 2,
     },
     {
         id: 2,
-        img: danladi,
+        img: postImage,
         name: "Augustine Doe",
         profession: "Farmer",
         friends: 5,
@@ -30,19 +30,19 @@ export const CONNECT_WITH = [
 export const GROUPS_YOU_CAN_JOIN = [
     {
         id: 0,
-        img: danladi,
+        img: postImage,
         name: "Ward 5 Maize Farmers",
         branch: "Tier1 Group",
     },
     {
         id: 1,
-        img: danladi,
+        img: postImage,
         name: "Ward 5 Maize Farmers",
         branch: "Tier1 Group",
     },
     {
         id: 2,
-        img: danladi,
+        img: postImage,
         name: "Ward 5 Maize Farmers",
         branch: "Tier1 Group",
     }
