@@ -16,6 +16,7 @@ interface CreatePostDialogProps {
     onClose: () => void;
 }
 
+
 export default function CreatePostDialog({ open, onClose }: CreatePostDialogProps) {
     return (
         <Dialog open={open}>

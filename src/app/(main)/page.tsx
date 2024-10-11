@@ -1,10 +1,10 @@
 "use client";
 import { useState } from "react";
-import CreatePost from "@/app/components/home/CreatePost";
 import Post from "../components/home/Post";
 import Connect from "../components/home/Connect";
-import CreatePostDialog from "../components/home/CreatePostDialog";
 import WeatherCard from "../components/cards/WeatherCard";
+import CreatePost from "../components/home/CreatePost";
+import CreatePostDialog from "../components/home/CreatePostDialog";
 
 export default function Home() {
     const [showPostDialog, setShowPostDialog] = useState(false)
