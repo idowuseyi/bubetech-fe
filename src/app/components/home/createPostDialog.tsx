@@ -10,6 +10,11 @@ import {
     DialogTitle,
 } from "../../../components/ui/dialog";
 import Image from 'next/image';
+import { BsImage } from "react-icons/bs";
+import { LiaUserTagSolid } from "react-icons/lia";
+import { BiSolidBarChartAlt2 } from "react-icons/bi";
+import { MdOutlineEventNote } from "react-icons/md";
+import { Input } from '@/components/ui/input';
 
 interface CreatePostDialogProps {
     open: boolean;
@@ -32,7 +37,21 @@ export default function CreatePostDialog({ open, onClose }: CreatePostDialogProp
                     alt=""
                     className="w-8 h-8 object-cover"
                 />
-                    <p className='cursor-pointer text-[#686868] font-normal text-sm' >Share your thoughts...</p>
+                    <input placeholder="Share your thoughts..." className='px-3 py-2.5 cursor-pointer outline-none w-full text-[#686868] font-normal text-sm' />
+                </div>
+                <div className='flex w-11/12 mx-auto mt-10 mb-32 justify-between items-center gap-8 font-normal text-[#686868] leading-[21px] text-sm'>
+                    <div className='flex gap-2 items-center cursor-pointer'>
+                        <BsImage size={24} className='text-[#9B51E0]' /> <p className="text-sm">Add photos</p>
+                    </div>
+                    <div className='flex gap-2 items-center cursor-pointer'>
+                        <LiaUserTagSolid size={24} className='text-[#27AE60]' /> <p className="text-sm">Tag someone</p>
+                    </div>
+                    <div className='flex gap-2 items-center cursor-pointer'>
+                        <BiSolidBarChartAlt2 size={24} className='text-[#2D9CDB]' /> <p className="text-sm">Create poll</p>
+                    </div>
+                    <div className='flex gap-2 items-center cursor-pointer'>
+                        <MdOutlineEventNote size={24} className='text-[#A71F1F]' /> <p className="text-sm">Create Event</p>
+                    </div>
                 </div>
             </DialogContent>
         </Dialog>
