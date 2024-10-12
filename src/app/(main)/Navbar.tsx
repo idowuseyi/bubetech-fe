@@ -33,12 +33,12 @@ export default function Navbar() {
                         <IoAddCircleOutline size={18} />
                         <p className="font-normal text-sm leading-6 text-[#828282]">Post</p>
                     </div>
-                    <div className="flex flex-col items-center cursor-pointer">
+                    <Link href="/market-place" className="flex flex-col items-center cursor-pointer">
                         <IoBagHandleOutline size={18} />
                         <p className="font-normal text-sm leading-6 text-[#828282]">
                             Market
                         </p>
-                    </div>
+                    </Link>
                     <div className="flex flex-col items-center cursor-pointer">
                         <BsChatLeftText size={18} />
                         <p className="font-normal text-sm leading-6 text-[#828282]">Chat</p>
@@ -55,12 +55,12 @@ export default function Navbar() {
                         <AiOutlineMenu size={18} />
                         <p className="font-normal text-sm leading-6 text-[#828282]">Menu</p>
                     </div>
-                    <div className="flex flex-col items-center cursor-pointer">
+                    <Link href="/profile" className="flex flex-col items-center cursor-pointer">
                         <CgProfile size={18} />
                         <p className="font-normal text-sm leading-6 text-[#828282]">
                             Profile
                         </p>
-                    </div>
+                    </Link>
                 </div>
             </div>
             {/* MOBILE NAVBAR */}

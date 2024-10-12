@@ -113,13 +113,13 @@ const Page = () => {
                     </div>
                     <p className='text-[#4F4F4F] text-center font-normal text-xs'>or sign in with</p>
                     <div className='flex items-center gap-4 justify-center'>
-                        <div className='bg-white rounded-md w-[54px] h-[54px] flex items-center justify-center'>
+                        <div className='bg-white cursor-pointer rounded-md w-[54px] h-[54px] flex items-center justify-center'>
                             <FcGoogle size={24} />
                         </div>
-                        <div className='bg-white rounded-md w-[54px] h-[54px] flex items-center justify-center'>
+                        <div className='bg-white cursor-pointer rounded-md w-[54px] h-[54px] flex items-center justify-center'>
                             <SiApple size={24} />
                         </div>
-                        <div className='bg-white rounded-md w-[54px] h-[54px] flex items-center justify-center'>
+                        <div className='bg-white cursor-pointer rounded-md w-[54px] h-[54px] flex items-center justify-center'>
                             <FaFacebook size={24} className='text-blue-400' />
                         </div>
                     </div>
