@@ -1,6 +1,7 @@
 "use client"
 import React from 'react'
 import Image from 'next/image'
+import { useRouter } from 'next/navigation';
 import logoImage from "@/assets/BUBETECH_LOGO.png"
 import {
     Form,
@@ -23,9 +24,11 @@ import { SiApple } from "react-icons/si";
 import { FaFacebook } from "react-icons/fa6";
 import Slider from '@/app/components/slider/slider';
 import { Button } from '@/components/ui/button';
-import { redirect } from 'next/navigation';
+
+
 
 const Page = () => {
+    const router = useRouter();
     const [error, setError] = useState<string>();
 
     const [isPending, startTransition] = useTransition();
@@ -38,9 +41,11 @@ const Page = () => {
         },
     });
 
+
     async function onSubmit(values: SignUpValues) {
-        console.log("value", values)
-        redirect("/verify-email")
+        console.log("value", values);
+        // Redirect to verify email page
+        router.push("/verify-email");
     }
     return (
         <div className='flex xl:min-h-screen h-full'>
@@ -139,13 +144,13 @@ const Page = () => {
                     </div>
                     <p className='text-[#4F4F4F] text-center font-normal text-xs'>or sign in with</p>
                     <div className='flex items-center gap-4 justify-center'>
-                        <div className='bg-white rounded-md w-[54px] h-[54px] flex items-center justify-center'>
+                        <div className='bg-white cursor-pointer rounded-md w-[54px] h-[54px] flex items-center justify-center'>
                             <FcGoogle size={24} />
                         </div>
-                        <div className='bg-white rounded-md w-[54px] h-[54px] flex items-center justify-center'>
+                        <div className='bg-white cursor-pointer rounded-md w-[54px] h-[54px] flex items-center justify-center'>
                             <SiApple size={24} />
                         </div>
-                        <div className='bg-white rounded-md w-[54px] h-[54px] flex items-center justify-center'>
+                        <div className='bg-white cursor-pointer rounded-md w-[54px] h-[54px] flex items-center justify-center'>
                             <FaFacebook size={24} className='text-blue-400' />
                         </div>
                     </div>
