@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
-export default function ProfileDetails() {
+export default function ProfileDetails({ onNext }: any) {
   const [isSaving, setIsSaving] = useState(false);
   const [invoiceFile, setInvoiceFile] = useState<string>();
   const [selectedInvoiceFile, setSelectedInvoiceFile] = useState(null);
@@ -167,8 +167,10 @@ export default function ProfileDetails() {
               <Button
                 disabled={isSaving}
                 className="bg-[#6FA521] rounded-md mt-10 w-1/2 h-12 px-3.5 py-2.5 text-sm font-medium text-white shadow-sm"
+                onClick={onNext}
+                type="button"
               >
-                <span className="text-base font-medium">Next</span>
+                <span className="text-base font-medium" >Next</span>
               </Button>
             </div>
           </section>

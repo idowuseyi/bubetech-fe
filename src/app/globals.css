@@ -100,3 +100,12 @@ body {
 .weatherCard-gradient {
   background: linear-gradient(95.35deg, #304c07 0%, #6fa521 100%);
 }
+.animalCapture-gradient {
+  background: linear-gradient(129.18deg, #f2ffdf 0%, #cbe3a8 112.5%);
+}
+.animalCapture-inner-gradient {
+  background: linear-gradient(129.18deg, #e7f8cd 0%, #b9d78e 112.5%);
+}
+.animalCapture-innerMost-gradient {
+  background: linear-gradient(129.18deg, #6fa521 0%, #52830a 112.5%);
+}

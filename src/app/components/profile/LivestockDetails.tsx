@@ -3,7 +3,7 @@ import { X } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 
-export default function LivestockDetails() {
+export default function LivestockDetails({ onNext, onDiscard }: any) {
   const [isSaving, setIsSaving] = useState(false);
   return (
     <div>
@@ -133,12 +133,15 @@ export default function LivestockDetails() {
             {/* === Submit Button === */}
             <div className="flex w-full gap-4 max-w-[420px] mx-auto">
               <div className="text-center bg-white text-[#6FA521] border-[1.3px]  border-[#6FA521] rounded-md w-1/2  mt-10 h-12 px-3.5 py-2.5 text-sm font-medium shadow-sm cursor-pointer">
-                <span className="text-base font-medium">Previous</span>
+                <span className="text-base font-medium" onClick={onDiscard}>Previous</span>
               </div>
               <Button
                 disabled={isSaving}
                 className="bg-[#6FA521] rounded-md mt-10 w-1/2 h-12 px-3.5 py-2.5 text-sm font-medium text-white shadow-sm"
+                onClick={onNext}
+                type="button"
               >
+
                 <span className="text-base font-medium">Next</span>
               </Button>
             </div>
