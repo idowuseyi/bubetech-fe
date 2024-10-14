@@ -72,12 +72,9 @@ export default function ProfileDetails({ onNext }: any) {
                     className="hidden input-field"
                     onChange={handleUserFileChange}
                   />
-
-                  {invoiceFile && (
-                    <div className="absolute border-[1.3px] border-slate-200 rounded-full left-[60px] top-10 mx-auto w-[50px] h-[50px] bg-white flex items-center justify-center">
-                      <Camera className="text-[#6FA521]" />
-                    </div>
-                  )}
+                  <div className="absolute border-[1.3px] border-slate-200 rounded-full left-[60px] top-10 mx-auto w-[50px] h-[50px] bg-white flex items-center justify-center">
+                    <Camera className="text-[#6FA521]" />
+                  </div>
                 </div>
               </label>
             </div>
