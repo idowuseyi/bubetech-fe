@@ -5,6 +5,7 @@ import fertilizer from "@/assets/market-place/fertilizer.png";
 import rice from "@/assets/market-place/rice.png";
 import chicken from "@/assets/market-place/chickens.png";
 import potatoes from "@/assets/market-place/potatoes.png";
+import tractor from "@/assets/market-place/tractor.jpg";
 import avatar from "@/assets/market-place/avatar.jpg";
 
 export default function MarketPlace() {
@@ -39,7 +40,7 @@ export default function MarketPlace() {
     {
       id: 3,
       product_name: "Tractor",
-      product_img: rice,
+      product_img: tractor,
       amount: "100,000 /per day",
       product_owner: "Yakubu Tukur LTD",
       location: "Sokoto",
