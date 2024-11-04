@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  font-synthesis: none;
+  /* font-synthesis: none; */
 }
 
 @layer base {

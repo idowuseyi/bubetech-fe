@@ -1,6 +1,6 @@
 import MenuBar from "./MenuBar";
 import { Poppins } from "next/font/google";
-import Navbar from "./Navbar";
+import Navbar from "../components/navbar/Navbar";
 import BottomNavbar from "../components/navigation/BottomNavbar";
 
 const poppins = Poppins({

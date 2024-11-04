@@ -1,3 +1,4 @@
+"use client"
 import Link from "next/link";
 import logoImage from "@/assets/BUBETECH_LOGO.png";
 import { IoBagHandleOutline } from "react-icons/io5";
@@ -9,8 +10,11 @@ import { CgProfile } from "react-icons/cg";
 import { IoIosNotificationsOutline } from "react-icons/io";
 import Image from "next/image";
 import { FiSearch } from "react-icons/fi";
+import { usePathname } from "next/navigation";
+import { House } from "@phosphor-icons/react";
 
 export default function Navbar() {
+    const pathname = usePathname()
     return (
         <header className=" sticky top-0 z-10 bg-white shadow-sm">
             <div className="hidden mx-auto md:flex max-w-7xl flex-wrap items-center justify-between gap-5 px-5 py-3">
@@ -25,22 +29,22 @@ export default function Navbar() {
                     </div>
                 </div>
                 <div className="flex items-center gap-4">
-                    <div className="flex flex-col items-center gap- cursor-pointer">
-                        <GoHome size={18} />
-                        <p className="font-normal text-sm leading-6 text-[#828282]">Home</p>
-                    </div>
-                    <div className="flex flex-col items-center cursor-pointer">
-                        <IoAddCircleOutline size={18} />
+                    <Link href="/" className={`flex flex-col items-center cursor-pointer ${pathname === "/" ? "text-[#6FA521]" : "text-[#828282]"}`}>
+                        <House size={20} className="text-[#828282]" />
+                        <p className="font-normal text-sm leading-6">Home</p>
+                    </Link>
+                    <Link href={"/post"} className={`flex flex-col items-center cursor-pointer ${pathname === "/post" ? "text-[#6FA521]" : "text-[#828282]"}`}>
+                        <IoAddCircleOutline size={20} />
                         <p className="font-normal text-sm leading-6 text-[#828282]">Post</p>
-                    </div>
-                    <Link href="/market-place" className="flex flex-col items-center cursor-pointer">
+                    </Link>
+                    <Link href="/market-place" className={`flex flex-col items-center cursor-pointer ${pathname === "/market-place" ? "text-[#6FA521]" : "text-[#828282]"}`}>
                         <IoBagHandleOutline size={18} />
-                        <p className="font-normal text-sm leading-6 text-[#828282]">
+                        <p className="font-normal text-sm leading-6 ">
                             Market
                         </p>
                     </Link>
                     <div className="flex flex-col items-center cursor-pointer">
-                        <BsChatLeftText size={18} />
+                        <BsChatLeftText size={18} className="text-[#828282]" />
                         <p className="font-normal text-sm leading-6 text-[#828282]">Chat</p>
                     </div>
                 </div>
