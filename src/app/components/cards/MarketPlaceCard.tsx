@@ -1,6 +1,4 @@
 import Image from "next/image";
-import tomato from "@/assets/market-place/tomato.jpg";
-import avatar from "@/assets/market-place/avatar.jpg";
 import { Star } from "lucide-react";
 
 export default function MarketPlaceCard({ place, product_img, product_name, product_owner, owner_avatar, amount }: any) {
@@ -14,7 +12,7 @@ export default function MarketPlaceCard({ place, product_img, product_name, prod
               width={100}
               height={100}
               alt="tomato image"
-              className="w-full h-full rounded-lg"
+              className="w-full h-full rounded-lg object-fit object-center"
             />
           </div>
           <div className="px-4 py-4">
