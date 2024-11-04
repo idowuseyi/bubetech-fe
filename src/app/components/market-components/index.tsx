@@ -3,7 +3,6 @@ import { useSearchParams } from "next/navigation";
 import { useValidateTab } from "../common/RedirectTab";
 import TabsBtn from "../common/TabBtn";
 import MarketPlace from "./MarketPlace";
-import { Suspense } from "react";
 
 function Market() {
     const searchParams = useSearchParams();
@@ -32,8 +31,7 @@ function Market() {
     });
     return (
         <div>
-            <Suspense fallback={<div>Loading...</div>}>
-
+            <>
                 <div className=" flex w-fit mb-4 2xl:mb-7 items-end overflow-x-auto border-b border-[#E4E7EC]">
                     {tabVariants.map((tab) => (
                         <TabsBtn
@@ -50,9 +48,7 @@ function Market() {
 
                 {currentTab === "Buy" && <MarketPlace />}
                 {currentTab === "Sell" && <MarketPlace />}
-
-            </Suspense>
-
+            </>
         </div>
     )
 }
