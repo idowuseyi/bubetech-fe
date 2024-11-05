@@ -35,7 +35,7 @@ export default async function MenuBar({ className }: MenuBarProps) {
                 </div>
                 <div className="rounded-full w-6 flex items-center cursor-pointer justify-center h-6 bg-[#6FA521] "><MdAdd size={20} className="text-white" /></div>
             </div>
-            <div className="mt-20 flex gap-2 2xl:gap-6 flex-col">
+            <div className="mt-20 flex gap- flex-col">
                 <div className="flex items-center gap-1 cursor-pointer hover:bg-gray-50 hover:rounded-xl p-2">
                     <div className="w-7 h-7 items-center rounded-full justify-center bg-[#F9EDFF] flex"><IoBagHandleOutline className="text-[#690996]" /></div>
                     <p className="font-normal text-sm">Marketplace</p>

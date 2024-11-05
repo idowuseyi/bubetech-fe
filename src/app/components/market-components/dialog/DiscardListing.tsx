@@ -12,7 +12,7 @@ interface DiscardListingProps {
 export default function DiscardListing({ open, onClose, setOpenListingDialog, setOpenDiscardListingDialog }: DiscardListingProps) {
   return (
     <Dialog open={open}>
-      <DialogContent className="flex flex-col gap- w-full max-w-[450px]">
+      <DialogContent className="flex flex-col gap- w-11/12 max-w-[450px]">
         <div className="flex flex-col w-full max-w-[260px] mx-auto">
           <h2 className="text-base font-medium text-[#323232] text-center">
             Discard Listing

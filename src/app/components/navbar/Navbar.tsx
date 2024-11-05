@@ -30,7 +30,7 @@ export default function Navbar() {
                 </div>
                 <div className="flex items-center gap-4">
                     <Link href="/" className={`flex flex-col items-center cursor-pointer ${pathname === "/" ? "text-[#6FA521]" : "text-[#828282]"}`}>
-                        <House size={20} className="text-[#828282]" />
+                        <House size={20} className="" />
                         <p className="font-normal text-sm leading-6">Home</p>
                     </Link>
                     <Link href={"/post"} className={`flex flex-col items-center cursor-pointer ${pathname === "/post" ? "text-[#6FA521]" : "text-[#828282]"}`}>

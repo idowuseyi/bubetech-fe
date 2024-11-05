@@ -99,7 +99,7 @@ const Page = () => {
                             <Link className='text-[#6FA521] ' href="/forget-password">Forgot Password?</Link>
                         </div>
                         <div className="mt-20">
-                            <LoadingButton loading={isPending} type="submit" className="w-full bg-[#3F6A01] p-4 lg:space-y-10">
+                            <LoadingButton loading={isPending} type="submit" className="w-full bg-[#6FA521] p-4 lg:space-y-10">
                                 Log in
                             </LoadingButton>
 

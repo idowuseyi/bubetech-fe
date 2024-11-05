@@ -4,8 +4,8 @@ import { Star } from "lucide-react";
 export default function MarketPlaceCard({ place, product_img, product_name, product_owner, owner_avatar, amount }: any) {
   return (
     <>
-      <div className="max-w-[300px] border-[1.3px] border-gray-200 rounded-lg">
-        <div className="grid grid-rows-2 h-[300px]">
+      <div className="w-full md:max-w-[300px] border-[1.3px] border-gray-200 rounded-lg">
+        <div className="grid grid-rows-2 max-h-[450px] md:h-[300px]">
           <div className=" rounded-lg">
             <Image
               src={product_img}

@@ -130,7 +130,7 @@ const Page = () => {
                             <p>By continuing, you agree to our Terms of service and Privacy policy.</p>
                         </div>
                         <div className="mt-20">
-                            <LoadingButton loading={isPending} type="submit" className="w-full bg-[#3F6A01] p-4 lg:space-y-10">
+                            <LoadingButton loading={isPending} type="submit" className="w-full bg-[#6FA521] p-4 lg:space-y-10">
                                 Continue
                             </LoadingButton>
 

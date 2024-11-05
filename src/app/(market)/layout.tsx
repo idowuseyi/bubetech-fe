@@ -15,7 +15,7 @@ export default async function Layout({
     <html>
       <body className={`${poppins.className} relative flex min-h-screen flex-col bg-[#F6F6F6]`}>
         <Navbar />
-        <div className="w-full mx-auto max-w-7xl md:p-5">
+        <div className="w-full mx-auto max-w-7xl p-4 md:p-5">
           {children}
         </div>
       </body>
