@@ -1,9 +1,10 @@
 import Image from "next/image";
 import { Star } from "lucide-react";
+import Link from "next/link";
 
-export default function MarketPlaceCard({ place, product_img, product_name, product_owner, owner_avatar, amount }: any) {
+export default function MarketPlaceCard({ id, place, product_img, product_name, product_owner, owner_avatar, amount }: any) {
   return (
-    <>
+    <Link href={`/market-place/${id}`}>
       <div className="w-full md:max-w-[300px] border-[1.3px] border-gray-200 rounded-lg">
         <div className="grid grid-rows-2 max-h-[450px] md:h-[300px]">
           <div className=" rounded-lg">
@@ -45,6 +46,6 @@ export default function MarketPlaceCard({ place, product_img, product_name, prod
           </div>
         </div>
       </div>
-    </>
+    </Link>
   );
 }

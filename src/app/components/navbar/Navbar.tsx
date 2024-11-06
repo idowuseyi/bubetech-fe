@@ -37,7 +37,7 @@ export default function Navbar() {
                         <IoAddCircleOutline size={20} />
                         <p className="font-normal text-sm leading-6 text-[#828282]">Post</p>
                     </Link>
-                    <Link href="/market-place" className={`flex flex-col items-center cursor-pointer ${pathname === "/market-place" ? "text-[#6FA521]" : "text-[#828282]"}`}>
+                    <Link href="/market-place" className={`flex flex-col items-center cursor-pointer ${pathname.includes("/market-place") ? "text-[#6FA521]" : "text-[#828282]"}`}>
                         <IoBagHandleOutline size={18} />
                         <p className="font-normal text-sm leading-6 ">
                             Market

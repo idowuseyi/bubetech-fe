@@ -4,12 +4,6 @@ import {
     Dialog,
     DialogContent,
 } from "@/components/ui/dialog"
-import Image from 'next/image';
-import { BsImage } from "react-icons/bs";
-import { LiaUserTagSolid } from "react-icons/lia";
-import { BiSolidBarChartAlt2 } from "react-icons/bi";
-import { MdOutlineEventNote } from "react-icons/md";
-import { Input } from '@/components/ui/input';
 import { IoCloseOutline } from 'react-icons/io5';
 
 interface CreateListingProps {

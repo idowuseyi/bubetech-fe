@@ -63,6 +63,96 @@ export default function MarketPlace() {
       product_owner: "Khadija Shehu",
       location: "Sokoto",
       owner_avatar: avatar
+    },
+    {
+      id: 6,
+      product_name: "Yam",
+      product_img: chicken,
+      amount: "32,000",
+      product_owner: "Khadija Shehu",
+      location: "Sokoto",
+      owner_avatar: avatar
+    },
+    {
+      id: 7,
+      product_name: "Yam",
+      product_img: chicken,
+      amount: "32,000",
+      product_owner: "Khadija Shehu",
+      location: "Sokoto",
+      owner_avatar: avatar
+    },
+    {
+      id: 8,
+      product_name: "Yam",
+      product_img: chicken,
+      amount: "32,000",
+      product_owner: "Khadija Shehu",
+      location: "Sokoto",
+      owner_avatar: avatar
+    },
+    {
+      id: 9,
+      product_name: "Yam",
+      product_img: chicken,
+      amount: "32,000",
+      product_owner: "Khadija Shehu",
+      location: "Sokoto",
+      owner_avatar: avatar
+    },
+    {
+      id: 10,
+      product_name: "Yam",
+      product_img: chicken,
+      amount: "32,000",
+      product_owner: "Khadija Shehu",
+      location: "Sokoto",
+      owner_avatar: avatar
+    },
+    {
+      id: 11,
+      product_name: "Yam",
+      product_img: chicken,
+      amount: "32,000",
+      product_owner: "Khadija Shehu",
+      location: "Sokoto",
+      owner_avatar: avatar
+    },
+    {
+      id: 12,
+      product_name: "Yam",
+      product_img: chicken,
+      amount: "32,000",
+      product_owner: "Khadija Shehu",
+      location: "Sokoto",
+      owner_avatar: avatar
+    },
+    {
+      id: 13,
+      product_name: "Yam",
+      product_img: chicken,
+      amount: "32,000",
+      product_owner: "Khadija Shehu",
+      location: "Sokoto",
+      owner_avatar: avatar
+    },
+    {
+      id: 14,
+      product_name: "Yam",
+      product_img: chicken,
+      amount: "32,000",
+      product_owner: "Khadija Shehu",
+      location: "Sokoto",
+      owner_avatar: avatar
+    },
+    {
+      id: 15,
+      product_name: "Yam",
+      product_img: chicken,
+      amount: "32,000",
+      product_owner: "Khadija Shehu",
+      location: "Sokoto",
+      owner_avatar: avatar
     }
   ]
 
@@ -72,6 +162,7 @@ export default function MarketPlace() {
         {marketData.map((item) => (
           <MarketPlaceCard
             key={item.id}
+            id={item.id}
             product_name={item.product_name}
             product_img={item.product_img}
             amount={item.amount}
