@@ -1,8 +1,8 @@
 "use client";
 import React, { useState } from 'react'
+import Image from 'next/image'
 import tomato from "../../../../assets/market-place/tomato.jpg"
 import avatar from "../../../../assets/market-place/avatar.jpg"
-import Image from 'next/image'
 import { CaretLeft, ChatCenteredDots, Minus, Phone, Plus, Star } from '@phosphor-icons/react'
 import { useRouter } from 'next/navigation'
 import CreateOffer from '../dialog/CreateOffer';

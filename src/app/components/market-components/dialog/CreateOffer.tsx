@@ -5,6 +5,7 @@ import {
     DialogContent,
 } from "@/components/ui/dialog"
 import { IoCloseOutline } from 'react-icons/io5';
+import Link from 'next/link';
 
 interface CreateOfferProps {
     open: boolean;
@@ -34,14 +35,14 @@ export default function CreateOffer({ open, onClose }: CreateOfferProps) {
                         />
                     </div>
                     {/* === Submit Button === */}
-                    <div className='w-full'>
+                    <Link href={"/market-place/chat"} className='w-full'>
                         <Button
                             className="bg-[#6FA521] rounded-md mt-3 xl:mt-10 w-full h-12 px-3.5 py-2.5 text-sm font-medium text-white shadow-sm"
                             type="button"
                         >
                             <span className="text-base font-medium" >Send</span>
                         </Button>
-                    </div>
+                    </Link>
 
                 </form>
 
