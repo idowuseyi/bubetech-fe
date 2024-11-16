@@ -66,7 +66,10 @@ const Pin = ({ open, onClose }: PinProps) => {
                         {pin.map((value, index) => (
                             <input
                                 key={index}
-                                ref={(el) => (inputRefs.current[index] = el)}
+                                // ref={(el) => (inputRefs.current[index] = el)}
+                                ref={(el) => {
+                                    inputRefs.current[index] = el;
+                                }}
                                 className={`w-4 h-4 rounded-full focus:outline-none bg-[#D9D9D9] text-center ${value ? "bg-black/50" : "bg-[#D9D9D9]"
                                     }`}
                                 type="text"
