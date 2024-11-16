@@ -1,9 +1,5 @@
 "use client"
 import React, { useState } from 'react'
-import Image from 'next/image'
-import card from "@/assets/market-place/payment-card.png";
-import transfer from "@/assets/market-place/transfer.png";
-import { Plus } from '@phosphor-icons/react';
 import AddNewCardForm from '../../form/checkout/AddNewCardForm';
 import OrderCheckoutForm from '../../form/checkout/OrderCheckoutForm';
 export default function OrderCheckout() {

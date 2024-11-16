@@ -106,7 +106,7 @@ export default function OrderCheckoutForm({ setAddNewCard }: OrderCheckoutFormPr
             <div className='mt-2 bg-[#FFFFFF] px-6 py-8 rounded-[20px] flex flex-col'>
                 <div className={`flex items-center justify-between w-full ${selected === "card" ? "bg-[#f0f0f0] rounded-md p-2" : ""}`}>
                     <div
-                        onClick={() => setSelected("card")}
+                        onClick={() => setSelected(selected === "card" ? "" : "card")}
                         className="flex items-start gap-2 cursor-pointer"
                     >
                         <Image src={card} alt="payment-card" className="w-6 h-4 object-cover object-center" />
@@ -117,7 +117,7 @@ export default function OrderCheckoutForm({ setAddNewCard }: OrderCheckoutFormPr
                     </div>
                     <button
                         className="cursor-pointer border border-[#6FA521] flex items-center justify-center w-5 h-5 2xl:w-6 2xl:h-6 rounded-full"
-                        onClick={() => setSelected("card")}
+                        onClick={() => setSelected(selected === "card" ? "" : "card")}
                     >
                         <span
                             className={`w-3 h-3 2xl:w-[15px] 2xl:h-[15px] rounded-full ${selected === "card" ? "bg-[#6FA521]" : ""}`}
@@ -132,7 +132,7 @@ export default function OrderCheckoutForm({ setAddNewCard }: OrderCheckoutFormPr
                 </div>
                 <div className={`mt-4 flex items-center justify-between w-full ${selected === "transfer" ? "bg-[#f0f0f0] rounded-md p-2" : ""}`}>
                     <div
-                        onClick={() => setSelected("transfer")}
+                        onClick={() => setSelected(selected === "transfer" ? "" : "transfer")}
                         className={`flex items-center gap-2 cursor-pointer $`}
                     >
                         <Image src={transfer} alt="payment-card" className="w-7 h-7" />
@@ -140,7 +140,7 @@ export default function OrderCheckoutForm({ setAddNewCard }: OrderCheckoutFormPr
                     </div>
                     <button
                         className="cursor-pointer border border-[#6FA521] flex items-center justify-center w-5 h-5 2xl:w-6 2xl:h-6 rounded-full"
-                        onClick={() => setSelected("transfer")}
+                        onClick={() => setSelected(selected === "transfer" ? "" : "transfer")}
                     >
                         <span
                             className={`w-3 h-3 2xl:w-[15px] 2xl:h-[15px] rounded-full ${selected === "transfer" ? "bg-[#6FA521]" : ""}`}
