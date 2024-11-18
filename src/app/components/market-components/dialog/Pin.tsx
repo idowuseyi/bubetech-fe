@@ -1,13 +1,14 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { Backspace, CaretLeft } from "@phosphor-icons/react";
 
 interface PinProps {
     open: boolean;
     onClose: () => void;
+    setOpenSuccessDialog: any
 }
 
-const Pin = ({ open, onClose }: PinProps) => {
+const Pin = ({ open, onClose, setOpenSuccessDialog }: PinProps) => {
     const [pin, setPin] = useState<string[]>(["", "", "", ""]);
     const inputRefs = useRef<(HTMLInputElement | null)[]>([]);
 
@@ -21,7 +22,16 @@ const Pin = ({ open, onClose }: PinProps) => {
                 inputRefs.current[nextIndex + 1]?.focus();
             }
         }
+        handleSuccess()
     };
+
+    const handleSuccess = () => {
+        if (pin[2] !== "") {
+            setOpenSuccessDialog(true);
+            onClose()
+        }
+    }
+
 
     const handleBackspace = () => {
         const lastFilledIndex = pin.findLastIndex((p) => p !== "");
@@ -44,6 +54,15 @@ const Pin = ({ open, onClose }: PinProps) => {
         }
     };
 
+    // useEffect(() => {
+    //     if (pin.every((digit) => digit !== "")) {
+    //         setOpenSuccessDialog(true);
+
+    //     }
+    //     return () => {
+    //         setPin(["", "", "", ""]);
+    //     };
+    // }, [pin, setOpenSuccessDialog]);
     return (
         <Dialog open={open}>
             <DialogContent className="flex flex-col w-11/12 max-w-[450px] rounded-[20px]">

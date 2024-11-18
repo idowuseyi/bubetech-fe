@@ -4,9 +4,11 @@ import Image from 'next/image'
 import tomato from "@/assets/market-place/tomato.jpg";
 import { Minus, Plus } from '@phosphor-icons/react';
 import Pin from '../dialog/Pin';
+import Success from '../dialog/Success';
 
 export default function CheckoutSummary() {
     const [openPinDialog, setOpenPinDialog] = useState(false)
+    const [openSuccessDialog, setOpenSuccessDialog] = useState(false)
     const [quantity, setQuantity] = useState(1);
     const pricePerUnit = 32000;
     const shippingFee = 3500;
@@ -84,8 +86,15 @@ export default function CheckoutSummary() {
 
                 </div>
             </div >
-            <Pin open={openPinDialog}
-                onClose={() => setOpenPinDialog(false)} />
+            <Pin
+                open={openPinDialog}
+                setOpenSuccessDialog={setOpenSuccessDialog}
+                onClose={() => setOpenPinDialog(false)}
+            />
+            <Success
+                open={openSuccessDialog}
+                onClose={() => setOpenSuccessDialog(false)}
+            />
         </>
     )
 }
