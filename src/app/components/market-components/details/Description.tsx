@@ -10,6 +10,7 @@ import CreateOffer from '../dialog/CreateOffer';
 export default function Description() {
     const router = useRouter();
     const [openCreateOfferDialog, setOpenCreateOfferDialog] = useState(false)
+    const [openSuccessDialog, setOpenSuccessDialog] = useState(false)
 
     const handleGoBack = () => {
         router.back();
@@ -104,6 +105,7 @@ export default function Description() {
 
             </div>
             <CreateOffer open={openCreateOfferDialog}
+                setOpenSuccessDialog={setOpenSuccessDialog}
                 onClose={() => setOpenCreateOfferDialog(false)} />
         </>
     )

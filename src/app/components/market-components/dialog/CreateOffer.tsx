@@ -10,9 +10,10 @@ import Link from 'next/link';
 interface CreateOfferProps {
     open: boolean;
     onClose: () => void;
+    setOpenSuccessDialog: any;
 }
 
-export default function CreateOffer({ open, onClose }: CreateOfferProps) {
+export default function CreateOffer({ open, onClose, setOpenSuccessDialog }: CreateOfferProps) {
     return (
         <Dialog open={open}>
             <DialogContent className='flex flex-col w-11/12 max-w-[350px] rounded-[20px]'>
