@@ -8,9 +8,10 @@ import Link from "next/link";
 interface SuccessProps {
   open: boolean;
   onClose: () => void;
+  setOpenListingDialog: any;
 }
 
-export default function ListingSuccess({ open, onClose }: SuccessProps) {
+export default function ListingSuccess({ open, onClose, setOpenListingDialog }: SuccessProps) {
   return (
     <Dialog open={open}>
       <DialogContent className="flex flex-col w-11/12 max-w-[450px] rounded-[20px]">
@@ -37,19 +38,19 @@ export default function ListingSuccess({ open, onClose }: SuccessProps) {
         </div>
 
         <div className="flex flex-col gap-1">
-          <Link
-            href={"/market-place"}
-            className="rounded-[10px] w-full bg-[#6FA521] text-center text-sm text-white flex items-center justify-center h-12"
-          >
-            Go to Marketplace
-          </Link>
           <button
-            type="button"
-            className="rounded-[10px] w-full bg-transparent text-center text-sm text-[#6FA521] h-12"
-            onClick={onClose}
+            // href={"/market-place"}
+            className="rounded-[10px] w-full bg-[#6FA521] text-center text-sm text-white flex items-center justify-center h-12"
+            onClick={() => { setOpenListingDialog(true); onClose() }}
           >
-            Share Receipt
+            Create New Listing
           </button>
+          <Link
+            href={"/market-place/dashboard"}
+            className="rounded-[10px] mt-4 w-full bg-transparent text-center text-sm text-[#6FA521] h-12"
+          >
+            Go to Dashboard
+          </Link>
         </div>
       </DialogContent>
     </Dialog>

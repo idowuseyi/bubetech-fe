@@ -9,11 +9,12 @@ import { IoCloseOutline } from 'react-icons/io5';
 interface CreateListingProps {
     open: boolean;
     onClose: () => void;
-    setOpenDiscardListingDialog: any
+    setOpenDiscardListingDialog: any;
+    setOpenListingSuccessDialog: any;
 }
 
 
-export default function CreateListing({ open, onClose, setOpenDiscardListingDialog }: CreateListingProps) {
+export default function CreateListing({ open, onClose, setOpenDiscardListingDialog, setOpenListingSuccessDialog }: CreateListingProps) {
     return (
         <Dialog open={open}>
             <DialogContent className='flex flex-col gap-3 xl:gap-10 w-11/12 md:w-3/5 h-fit max-h-full overflow-y-auto'>
@@ -154,9 +155,8 @@ export default function CreateListing({ open, onClose, setOpenDiscardListingDial
                             <span className="text-base font-medium">Discard</span>
                         </div>
                         <Button
-                            // disabled={isSaving}
                             className="bg-[#6FA521] rounded-md mt-3 xl:mt-10 w-1/2 h-12 px-3.5 py-2.5 text-sm font-medium text-white shadow-sm"
-                            // onClick={onNext}
+                            onClick={() => { setOpenListingSuccessDialog(true); onClose() }}
                             type="button"
                         >
                             <span className="text-base font-medium" >Submit</span>

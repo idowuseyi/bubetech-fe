@@ -8,6 +8,7 @@ import plus from "@/assets/plus.png"
 import { useState } from "react";
 import CreateListing from "./dialog/CreateListing";
 import DiscardListing from "./dialog/DiscardListing";
+import ListingSuccess from "./dialog/ListingSuccess";
 
 
 
@@ -16,6 +17,7 @@ function Market() {
     const selectedTabs = searchParams.get("tab") ?? "Buy";
     const [openListingDialog, setOpenListingDialog] = useState(false)
     const [openDiscardListingDialog, setOpenDiscardListingDialog] = useState(false)
+    const [openListingSuccessDialog, setOpenListingSuccessDialog] = useState(false)
 
     const tabVariants = [
         {
@@ -78,6 +80,7 @@ function Market() {
                 open={openListingDialog}
                 onClose={() => setOpenListingDialog(false)}
                 setOpenDiscardListingDialog={setOpenDiscardListingDialog}
+                setOpenListingSuccessDialog={setOpenListingSuccessDialog}
             />
             <DiscardListing
                 open={openDiscardListingDialog}
@@ -87,6 +90,11 @@ function Market() {
                 }}
                 setOpenListingDialog={setOpenListingDialog}
                 setOpenDiscardListingDialog={setOpenDiscardListingDialog}
+            />
+            <ListingSuccess
+                open={openListingSuccessDialog}
+                setOpenListingDialog={setOpenListingDialog}
+                onClose={() => setOpenListingSuccessDialog(false)}
             />
         </>
     )
