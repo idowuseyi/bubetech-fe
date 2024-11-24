@@ -17,7 +17,8 @@ export default function MarketPlace() {
       amount: "32,000",
       product_owner: "Khadija Shehu",
       location: "Sokoto",
-      owner_avatar: tomato
+      owner_avatar: tomato,
+      category: "sell"
     },
     {
       id: 1,
@@ -26,7 +27,8 @@ export default function MarketPlace() {
       amount: "72,000",
       product_owner: "Bube Tech Limited",
       location: "Sokoto",
-      owner_avatar: avatar
+      owner_avatar: avatar,
+      category: "sell"
     },
     {
       id: 2,
@@ -35,7 +37,8 @@ export default function MarketPlace() {
       amount: "32,000",
       product_owner: "Khadija Shehu",
       location: "Sokoto",
-      owner_avatar: avatar
+      owner_avatar: avatar,
+      category: "sell"
     },
     {
       id: 3,
@@ -44,7 +47,8 @@ export default function MarketPlace() {
       amount: "100,000 /per day",
       product_owner: "Yakubu Tukur LTD",
       location: "Sokoto",
-      owner_avatar: avatar
+      owner_avatar: avatar,
+      category: "rent"
     },
     {
       id: 4,
@@ -53,7 +57,8 @@ export default function MarketPlace() {
       amount: "32,000",
       product_owner: "Khadija Shehu",
       location: "Sokoto",
-      owner_avatar: avatar
+      owner_avatar: avatar,
+      category: "sell"
     },
     {
       id: 5,
@@ -62,7 +67,8 @@ export default function MarketPlace() {
       amount: "32,000",
       product_owner: "Khadija Shehu",
       location: "Sokoto",
-      owner_avatar: avatar
+      owner_avatar: avatar,
+      category: "sell"
     },
     {
       id: 6,
@@ -71,7 +77,8 @@ export default function MarketPlace() {
       amount: "32,000",
       product_owner: "Khadija Shehu",
       location: "Sokoto",
-      owner_avatar: avatar
+      owner_avatar: avatar,
+      category: "sell"
     },
     {
       id: 7,
@@ -80,7 +87,8 @@ export default function MarketPlace() {
       amount: "32,000",
       product_owner: "Khadija Shehu",
       location: "Sokoto",
-      owner_avatar: avatar
+      owner_avatar: avatar,
+      category: "sell"
     },
     {
       id: 8,
@@ -89,7 +97,8 @@ export default function MarketPlace() {
       amount: "32,000",
       product_owner: "Khadija Shehu",
       location: "Sokoto",
-      owner_avatar: avatar
+      owner_avatar: avatar,
+      category: "sell"
     },
     {
       id: 9,
@@ -98,7 +107,8 @@ export default function MarketPlace() {
       amount: "32,000",
       product_owner: "Khadija Shehu",
       location: "Sokoto",
-      owner_avatar: avatar
+      owner_avatar: avatar,
+      category: "sell"
     },
     {
       id: 10,
@@ -107,7 +117,8 @@ export default function MarketPlace() {
       amount: "32,000",
       product_owner: "Khadija Shehu",
       location: "Sokoto",
-      owner_avatar: avatar
+      owner_avatar: avatar,
+      category: "sell"
     },
     {
       id: 11,
@@ -116,7 +127,8 @@ export default function MarketPlace() {
       amount: "32,000",
       product_owner: "Khadija Shehu",
       location: "Sokoto",
-      owner_avatar: avatar
+      owner_avatar: avatar,
+      category: "sell"
     },
     {
       id: 12,
@@ -125,7 +137,8 @@ export default function MarketPlace() {
       amount: "32,000",
       product_owner: "Khadija Shehu",
       location: "Sokoto",
-      owner_avatar: avatar
+      owner_avatar: avatar,
+      category: "sell"
     },
     {
       id: 13,
@@ -134,7 +147,8 @@ export default function MarketPlace() {
       amount: "32,000",
       product_owner: "Khadija Shehu",
       location: "Sokoto",
-      owner_avatar: avatar
+      owner_avatar: avatar,
+      category: "sell"
     },
     {
       id: 14,
@@ -143,7 +157,8 @@ export default function MarketPlace() {
       amount: "32,000",
       product_owner: "Khadija Shehu",
       location: "Sokoto",
-      owner_avatar: avatar
+      owner_avatar: avatar,
+      category: "sell"
     },
     {
       id: 15,
@@ -152,7 +167,8 @@ export default function MarketPlace() {
       amount: "32,000",
       product_owner: "Khadija Shehu",
       location: "Sokoto",
-      owner_avatar: avatar
+      owner_avatar: avatar,
+      category: "sell"
     }
   ]
 
@@ -169,6 +185,7 @@ export default function MarketPlace() {
             place={item.location}
             product_owner={item.product_owner}
             owner_avatar={item.owner_avatar}
+            category={item.category}
 
           />
         ))}

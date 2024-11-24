@@ -7,9 +7,10 @@ import { Plus } from '@phosphor-icons/react';
 
 type OrderCheckoutFormProps = {
     setAddNewCard: React.Dispatch<React.SetStateAction<boolean>>;
+    isGroupRent: any
 };
 
-export default function OrderCheckoutForm({ setAddNewCard }: OrderCheckoutFormProps) {
+export default function OrderCheckoutForm({ setAddNewCard, isGroupRent }: OrderCheckoutFormProps) {
     const [selected, setSelected] = useState("");
     return (
         <div className='flex flex-col w-full gap-4'>
@@ -33,13 +34,13 @@ export default function OrderCheckoutForm({ setAddNewCard }: OrderCheckoutFormPr
                     <div className="md:flex w-full gap-6">
                         <div className="w-full flex flex-col gap-2">
                             <label htmlFor="" className="text-sm font-extralight">
-                                Phone Number 1
+                                {isGroupRent ? "Group Name" : "Phone Number 1"}
                             </label>
                             <div className="p-3 text-[#898989] bg-[#DCDCDC] border-none rounded-md">
                                 <input
                                     className="w-full focus:outline-none cursor-text bg-transparent"
                                     type="text"
-                                    placeholder="09071779807"
+                                    placeholder={isGroupRent ? "Enter your full name" : "09071779807"}
                                     maxLength={24}
                                     readOnly
                                 />
@@ -53,13 +54,13 @@ export default function OrderCheckoutForm({ setAddNewCard }: OrderCheckoutFormPr
                                 <input
                                     className="w-full focus:outline-none cursor-text bg-transparent"
                                     type="text"
-                                    placeholder="Enter your full name"
+                                    placeholder="09071779807"
                                     maxLength={24}
                                 />
                             </div>
                         </div>
                     </div>
-                    <div className='flex flex-col gap-2'>
+                    {!isGroupRent && <div className='flex flex-col gap-2'>
                         <label htmlFor="name" className="text-sm font-extralight">
                             Address
                         </label>
@@ -72,7 +73,8 @@ export default function OrderCheckoutForm({ setAddNewCard }: OrderCheckoutFormPr
                                 readOnly
                             />
                         </div>
-                    </div>
+                    </div>}
+
                     <div className='flex flex-col gap-2'>
                         <label htmlFor="name" className="text-sm font-extralight">
                             Delivery Address

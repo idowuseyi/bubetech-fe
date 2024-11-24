@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Star } from "lucide-react";
 import Link from "next/link";
 
-export default function MarketPlaceCard({ id, place, product_img, product_name, product_owner, owner_avatar, amount }: any) {
+export default function MarketPlaceCard({ id, place, product_img, product_name, product_owner, owner_avatar, amount, category }: any) {
   return (
     <Link href={`/market-place/${id}`}>
       <div className="w-full md:max-w-[300px] border-[1.3px] border-gray-200 rounded-lg">
