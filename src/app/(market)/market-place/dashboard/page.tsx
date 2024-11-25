@@ -2,6 +2,9 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import plus from "@/assets/plus.png";
+import tomotoes from "@/assets/market-place/tomato.jpg";
+import chicken from "@/assets/market-place/chickens.png";
+import potatoe from "@/assets/market-place/potatoes.png";
 import { CaretLeft, MagnifyingGlass } from '@phosphor-icons/react';
 import { useRouter } from 'next/navigation';
 import DashboardCard from '@/app/components/cards/DashboardCard';
@@ -33,6 +36,124 @@ const CardData = [
         statusCode: "#FBD5E1"
     }
 ]
+const Products = [
+    {
+        id: 0,
+        img: tomotoes,
+        name: "Tomatoes",
+        weight: "12kg",
+        quantity: "1 basket of Tomatoes",
+        price: "N32,000",
+        location: "Kano",
+        status: "Not Sold",
+        action: "Edit",
+    },
+    {
+        id: 1,
+        img: chicken,
+        name: "Chicken",
+        weight: "1kg",
+        quantity: "1 Chicken",
+        price: "N32,000",
+        location: "Kano",
+        status: "Sold",
+        action: "Edit",
+    },
+    {
+        id: 2,
+        img: potatoe,
+        name: "Potatoe",
+        weight: "12kg",
+        quantity: "1 basket of Potatoes",
+        price: "N32,000",
+        location: "Sokoto",
+        status: "Not Sold",
+        action: "Edit",
+    },
+    {
+        id: 3,
+        img: tomotoes,
+        name: "Tomatoes",
+        weight: "12kg",
+        quantity: "1 basket of Tomatoes",
+        price: "N32,000",
+        location: "Kano",
+        status: "Not Sold",
+        action: "Edit",
+    },
+
+]
+
+const ProductTable = ({ products }: any) => {
+    const TableHeader = () => (
+        <thead className="border-b border-gray-300 bg-[#F5FFE6]">
+            <tr className="text-[#323232] font text-sm  text-left">
+                <th className="py-2"></th>
+                <th className="py-2">Product Name</th>
+                <th className="py-2">Weight</th>
+                <th className="py-2">Quantity</th>
+                <th className="py-2">Price</th>
+                <th className="py-2">Location</th>
+                <th className="py-2">Status</th>
+                <th className="py-2">Action</th>
+            </tr>
+        </thead>
+    );
+    const TableRow = ({ item }: any) => {
+        console.log(item)
+
+        return (
+            < tr className="border-b shadow-md rounded-lg border-gray-200 bg-[#FFFFFF]  text-black" >
+                <td className="p-2">
+                    <Image
+                        src={item.img}
+                        width={100}
+                        height={100}
+                        alt="tomato image"
+                        className="w-8 h-8 mx-auto rounded-sm   object-fit object-center"
+                    />
+
+                </td>
+                <td className="p-2">
+                    <p
+                        className="w-fit px-3 py-1 rounded-full text-base font-normal"
+                    >
+                        {item.name}
+                    </p>
+
+                </td>
+
+                <td>
+                    <p
+                        className="w-fit px-3 py-1 rounded-full text-base font-normal"
+                    >
+                        {item.weight}
+                    </p>
+                </td>
+                <td className="py-2 text-base font-normal">{item.quantity}</td>
+                <td className="py-2 text-base font-normal">{item.price}</td>
+                <td className="py-2 text-base font-normal">{item.location}</td>
+                <td className={`py-2 text-base font-normal ${item.status === "Sold" ? "text-[#E1645C]" : "text-[#D5A705]"}`}>{item.status}</td>
+                <td className="py-2 text-sm text-[#6FA521] cursor-pointer">{item.action}</td>
+            </ tr>)
+    }
+
+
+    return (
+
+        <table className="w-full mb-5 h-fit">
+            <TableHeader />
+            <tbody >
+                {products?.map((item: any) => {
+                    console.log(item)
+                    return (
+                        <TableRow key={item?.id} item={item} />
+                    )
+                })}
+            </tbody>
+        </table>
+    );
+};
 
 export default function Page() {
     const router = useRouter();
@@ -80,6 +201,9 @@ export default function Page() {
                     />
 
                 </div>
+            </div>
+            <div>
+                <ProductTable products={Products} />
             </div>
         </div>
     )
