@@ -11,9 +11,6 @@ export default function DatePicker() {
                 <DemoItem label="1 calendar">
                     <DateRangeCalendar calendars={1} />
                 </DemoItem>
-                <DemoItem label="2 calendars">
-                    <DateRangeCalendar calendars={2} />
-                </DemoItem>
             </DemoContainer>
         </LocalizationProvider>
     )

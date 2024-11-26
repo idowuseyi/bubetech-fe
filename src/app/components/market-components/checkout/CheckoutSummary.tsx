@@ -5,6 +5,7 @@ import tomato from "@/assets/market-place/tomato.jpg";
 import { Minus, Plus } from '@phosphor-icons/react';
 import Pin from '../dialog/Pin';
 import Success from '../dialog/Success';
+// import DatePicker from '../DatePicker';
 
 export default function CheckoutSummary() {
     const [openPinDialog, setOpenPinDialog] = useState(false)
@@ -21,6 +22,7 @@ export default function CheckoutSummary() {
     return (
         <>
             <div>
+                {/* <DatePicker /> */}
                 <div className='bg-[#FFFFFF] w-full flex-1 md:w-[440px] md:flex-[2] rounded-[20px]'>
                     <div className='flex flex-col gap-3 p-6 border-b border-[#DCDCDC]'>
                         <h4 className='text-base font-medium text-[#323232]'>Order Summary</h4>
