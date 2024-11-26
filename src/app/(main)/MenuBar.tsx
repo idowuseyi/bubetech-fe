@@ -48,11 +48,11 @@ export default async function MenuBar({ className }: MenuBarProps) {
                     <div className="w-7 h-7 items-center rounded-full justify-center bg-[#E0FFDD] flex"><GrResources className="text-[#2D8225]" /></div>
                     <p className="font-normal text-sm">Resources</p>
                 </Link>
-                <div className="flex items-center gap-1 cursor-pointer hover:bg-gray-50 hover:rounded-xl p-2">
+                <Link href={"/prescription"} className="flex items-center gap-1 cursor-pointer hover:bg-gray-50 hover:rounded-xl p-2">
                     <div className="w-7 h-7 items-center rounded-full justify-center bg-[#DDFFFF] flex"><GiNotebook className="text-[#0CB2B2]" /></div>
                     <p className="font-normal text-sm">Prescription</p>
 
-                </div>
+                </Link>
                 <div className="flex items-center gap-1 cursor-pointer hover:bg-gray-50 hover:rounded-xl p-2">
                     <div className="w-7 h-7 items-center rounded-full justify-center bg-[#F9EDFF] flex"><IoBagHandleOutline className="text-[#718515]" /></div>
                     <p className="font-normal text-sm">Workshop & Webinars</p>
