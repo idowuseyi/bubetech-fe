@@ -1,11 +1,11 @@
 "use client"
-import React from 'react'
+import React, { Suspense } from 'react'
 import { CaretLeft } from '@phosphor-icons/react'
 import { useRouter, useSearchParams } from 'next/navigation';
 import CheckoutSummary from '@/app/components/market-components/checkout/CheckoutSummary';
 import OrderCheckout from '@/app/components/market-components/checkout/OrderCheckout';
 
-export default function Page() {
+const PageContent = () => {
     const searchParams = useSearchParams()
     const router = useRouter();
 
@@ -29,3 +29,11 @@ export default function Page() {
         </div>
     )
 }
+
+const Page = () => (
+    <Suspense fallback={<div>Loading...</div>}>
+        <PageContent />
+    </Suspense>
+);
+
+export default Page;
