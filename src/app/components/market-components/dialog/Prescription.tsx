@@ -51,7 +51,7 @@ export default function Prescription({ open, onClose, setPrescriptionDialog }: P
                         <p className='font-medium text-sm'>1 Week</p>
                     </div>
 
-                    <Link href={"/market-place/chat"} className='w-full'>
+                    <Link href={"/pharmacy"} className='w-full'>
                         <Button
                             className="bg-[#6FA521] rounded-md mt-3 w-full h-12 px-3.5 py-2.5 text-sm font-medium text-white shadow-sm"
                             type="button"
