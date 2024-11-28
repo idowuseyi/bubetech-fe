@@ -11,7 +11,7 @@ export default function Page() {
                         <MarketPlaceSideBar />
                     </aside>
                     <main className="">
-                        <h2>resource</h2>
+                        <h2>Experts</h2>
                     </main>
                 </div>
             </div>
