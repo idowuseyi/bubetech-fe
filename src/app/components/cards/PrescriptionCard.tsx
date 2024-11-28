@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function PrescriptionCard() {
+export default function PrescriptionCard({ setPrescriptionDialog }: any) {
     return (
         <div className='bg-white rounded-[10px] flex flex-col p-2'>
             <div className='flex items-center py-1 border-b border-[#F2EFEF] justify-between'>
@@ -32,7 +32,7 @@ export default function PrescriptionCard() {
                     <p className='font-normal text-sm'>Status</p>
                     <p className='font-medium text-sm text-[#6FA521]'>New Prescription</p>
                 </div>
-                <button className='border mt-4 border-[#6FA521] rounded-[10px] text-center p-3 font-medium text-xs text-[#6FA521]'>Order Drugs</button>
+                <button className='border mt-4 border-[#6FA521] rounded-[10px] text-center p-3 font-medium text-xs text-[#6FA521]' onClick={() => setPrescriptionDialog(true)}>Order Drugs</button>
             </div>
 
         </div>
